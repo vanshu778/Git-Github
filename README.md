@@ -95,7 +95,7 @@ Git and GitHub are essential tools for modern software development. Start by und
 
 ## 1. Repository (Repo)
 
-A **repository** is essentially a folder that contains your project files and directories. Unlike a regular folder, a repository includes version history, making it a container that stores your project’s code, changes, and history.
+A **Repository** is essentially a folder that contains your project files and directories. Unlike a regular folder, a repository includes version history, making it a container that stores your project’s code, changes, and history.
 
 ### Commands:
 - **Check Git Version**:
