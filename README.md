@@ -210,3 +210,62 @@ Now, running `git status` won't show these ignored folders as being tracked.
 
 ### Conclusion
 In this section, we've covered the basics of Git and how to use it for tracking changes in your files and folders. You’ve also learned about essential commands like `init`, `add`, `commit`, and `log`. By the end of this guide, you should feel confident in using Git effectively to manage your code.
+
+# Git Behind-the-Scenes
+
+A detailed guide to understanding how Git stores and manages snapshots of your code, along with the essential objects that Git uses behind the scenes. This repository explores the fundamental building blocks of Git: Commit Object, Tree Object, and Blob Object.
+
+## Snapshots in Git
+
+Git represents your code at a specific point in time through snapshots. These snapshots are stored locally in a key-value database and are uniquely identified by a hash.
+
+### 3 Key Objects of Git (The Three Musketeers)
+
+1. **Commit Object**  
+   The Commit Object contains:
+   - A reference to the Tree Object.
+   - A reference to the Parent Commit Object (if applicable).
+   - Author and committer details.
+   - Commit message.
+
+2. **Tree Object**  
+   The Tree Object acts as a container for files and folders at the time of the commit. It stores:
+   - File mode (permissions).
+   - File name.
+   - File hash (reference to the Blob Object).
+   - Parent tree (for subdirectories).
+
+3. **Blob Object**  
+   The Blob Object stores the actual content of files as a key-value pair:
+   - Key: File name.
+   - Value: File content.
+
+## Git Commands to Explore Internals
+
+Explore the internals of Git by using the following commands:
+
+- **View Commit Object**  
+  Displays detailed information about a specific commit.
+  ```bash
+  git show -s --pretty=raw <commit-hash>
+
+- **View Tree Object**  
+  Lists the files and folders tracked by a specific tree object.
+  ```bash
+  git ls-tree <tree-id>
+
+
+- **View Blob Object**  
+  Displays the actual contents of a file stored in the blob object.
+  ```bash
+  git show <blob-id>
+
+- **View Commit Details**  
+  Displays detailed information about a commit, including the associated tree and parent commit.
+  ```bash
+  git cat-file -p <commit-id>
+
+## Conclusion
+Understanding Git's internals is crucial for anyone looking to master version control. By exploring Git's three key objects — Commit, Tree, and Blob — you can gain a deeper understanding of how Git manages and stores your project at various points in time. This knowledge empowers developers to make more informed decisions when working with version control systems, allowing them to troubleshoot, optimize, and contribute more effectively to projects.
+
+We hope this guide serves as a valuable resource in your journey to becoming proficient with Git.
