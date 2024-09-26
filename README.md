@@ -254,7 +254,6 @@ Explore the internals of Git by using the following commands:
   ```bash
   git ls-tree <tree-id>
 
-
 - **View Blob Object**  
   Displays the actual contents of a file stored in the blob object.
   ```bash
