@@ -325,6 +325,7 @@ By using branches, you can make changes without affecting the `main` branch unti
 
 ### Fast-Forward Merge
 Occurs when the branch being merged has no diverging commits.
+<img width="365" alt="Fast-Forward" src="https://github.com/user-attachments/assets/4a9ff81c-d764-4a0e-a080-d7927c190c06">
 
 1. **Switch to the `main` branch**:
    ```bash
@@ -336,6 +337,7 @@ Occurs when the branch being merged has no diverging commits.
 
 ### Not Fast-Forward Merge
 Occurs when both branches have diverged, which requires conflict resolution.
+<img width="367" alt="Not Fast-Forward" src="https://github.com/user-attachments/assets/6806b49c-b3f9-4d88-a2c0-10ca553cbd48">
 
 1. **Merge the bug-fix branch**:
    ```bash
@@ -343,6 +345,7 @@ Occurs when both branches have diverged, which requires conflict resolution.
 
 ### Conflict Resolution
 Conflicts arise when changes in both branches modify the same lines of code.
+<img width="487" alt="Conflict Resolution" src="https://github.com/user-attachments/assets/3dedf843-aa08-4d53-ac43-5f6c1dd875e9">
 
 1. **Check Status**:
    ```bash
