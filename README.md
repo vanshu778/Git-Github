@@ -345,7 +345,9 @@ Occurs when both branches have diverged, which requires conflict resolution.
 
 ### Conflict Resolution
 Conflicts arise when changes in both branches modify the same lines of code.
-<img width="487" alt="Conflict Resolution" src="https://github.com/user-attachments/assets/3dedf843-aa08-4d53-ac43-5f6c1dd875e9">
+<p align="center">
+  <img width="487" alt="Conflict Resolution" src="https://github.com/user-attachments/assets/3dedf843-aa08-4d53-ac43-5f6c1dd875e9">
+</p>
 
 1. **Check Status**:
    ```bash
