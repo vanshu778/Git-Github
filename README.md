@@ -278,8 +278,9 @@ Git branches allow developers to work on different versions of a project simulta
 - Experiments
 
 By using branches, you can make changes without affecting the `main` branch until the changes are merged.
-
+<p align="center">
 <img width="342" alt="Branch" src="https://github.com/user-attachments/assets/61e5864f-5262-46a0-8f94-1afdb01a0681">
+</p>
 
 ---
 
@@ -328,6 +329,7 @@ Occurs when the branch being merged has no diverging commits.
 <p align="center">
 <img width="365" alt="Fast-Forward" src="https://github.com/user-attachments/assets/4a9ff81c-d764-4a0e-a080-d7927c190c06">
 </p>
+
 1. **Switch to the `main` branch**:
    ```bash
    git checkout main
@@ -341,6 +343,7 @@ Occurs when both branches have diverged, which requires conflict resolution.
 <p align="center">
 <img width="367" alt="Not Fast-Forward" src="https://github.com/user-attachments/assets/6806b49c-b3f9-4d88-a2c0-10ca553cbd48">
 </p>
+
 1. **Merge the bug-fix branch**:
    ```bash
    git merge bug-fix
