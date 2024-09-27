@@ -279,6 +279,8 @@ Git branches allow developers to work on different versions of a project simulta
 
 By using branches, you can make changes without affecting the `main` branch until the changes are merged.
 
+<img width="342" alt="Branch" src="https://github.com/user-attachments/assets/61e5864f-5262-46a0-8f94-1afdb01a0681">
+
 ---
 
 ## Branch Structure
