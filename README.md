@@ -386,3 +386,40 @@ Open the conflicted file (e.g., file2.txt) in your code editor and manually reso
 
 ### Conclusion
 Understanding branching and merging in Git is crucial for effective collaboration in development projects. By mastering these concepts, you'll enhance your ability to manage code changes, resolve conflicts, and work efficiently with your team.
+
+# Diff stash and Tags
+
+## Git Diff
+
+The `git diff` command shows the differences between two commits or changes made in different areas of your repository. Git treats different versions of the same file as two separate files and shows differences between them.
+
+### How to Read the Diff
+- `a/`: Indicates File A.
+- `b/`: Indicates File B.
+- `---`: Start of File A.
+- `+++`: Start of File B.
+- `@@`: Line number of changes.
+
+### Comparing Changes
+1. **Working Directory vs. Staging Area**:
+   ```bash
+   git diff
+- Shows unstaged changes.
+
+2. **Staging Area vs Repository**:
+   ```bash
+   git diff --staged
+- Displays changes staged for the next commit.
+
+3. **Comparing Branches:**:
+   ```bash
+   git diff <branch-one> <branch-two>
+   
+- Alternative:
+   ```bash
+   git diff branch-one..branch-two
+
+4. **Comparing Specific Commits**:
+   ```bash
+   git diff <commit-hash-one> <commit-hash-two>
+
