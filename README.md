@@ -459,4 +459,35 @@ The `git diff` command shows the differences between two commits or changes made
    ```bash
    git stash clear
 
+### Git Tags
+
+   Tags in Git are used to mark specific points in your repository, such as for releases or significant changes.
+   
+1. **Create a Tag**:
+   ```bash
+   git tag <tag-name>
+
+2. **Create an Annotated Tag**:
+   ```bash
+   git tag -a <tag-name> -m "Release 1.0"
+
+3. **List All Tags**:
+   ```bash
+   git tag
+
+4. **Tag a Specific Commit**:
+   ```bash
+   git tag <tag-name> <commit-hash>
+
+5. **Push Tags to Remote**:
+   ```bash
+   git push origin <tag-name>
+
+6. **Delete a Tag**:
+   ```bash
+   git tag -d <tag-name>
+
+7. **Delete Tag on Remote**:
+   ```bash
+   git push origin :<tag-name>
 
