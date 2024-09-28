@@ -491,3 +491,22 @@ The `git diff` command shows the differences between two commits or changes made
    ```bash
    git push origin :<tag-name>
 
+### Git Reflog
+
+   The git reflog command tracks updates to the HEAD reference and allows you to see your project's history, including changes and checkouts.
+   
+1. **View Reflog**:
+   ```bash
+   git reflog
+
+### Resetting to a Specific Commit
+
+   To reset your branch to a specific commit:
+   
+1. **Reset**:
+   ```bash
+   git reset --hard <commit-hash>
+   
+### Conclusion
+
+   This README covers essential Git commands related to git diff, git stash, git tag, and git reflog. Mastering these commands will allow you to manage your repository more effectively.
