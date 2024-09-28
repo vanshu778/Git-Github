@@ -411,7 +411,7 @@ The `git diff` command shows the differences between two commits or changes made
    git diff --staged
 - Displays changes staged for the next commit.
 
-3. **Comparing Branches:**:
+3. **Comparing Branches**:
    ```bash
    git diff <branch-one> <branch-two>
    
@@ -422,4 +422,41 @@ The `git diff` command shows the differences between two commits or changes made
 4. **Comparing Specific Commits**:
    ```bash
    git diff <commit-hash-one> <commit-hash-two>
+
+### Git Stash
+
+   The git stash command is used to temporarily save your work without committing it, useful when you need to switch branches.
+   
+1. **Save Changes**:
+   ```bash
+   git stash
+
+2. **Name the Stash**:
+   ```bash
+   git stash save "work in progress on X feature"
+
+3. **View Stash List**:
+   ```bash
+   git stash list
+
+4. **Apply Stash**:
+   ```bash
+   git stash apply
+
+5. **Apply Specific Stash**:
+   ```bash
+   git stash apply stash@{0}
+
+6. **Apply and Drop Stash**:
+   ```bash
+   git stash pop
+
+7. **Drop Stash**:
+   ```bash
+   git stash drop
+
+8. **Clear Stash**:
+   ```bash
+   git stash clear
+
 
