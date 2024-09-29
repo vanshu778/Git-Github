@@ -510,3 +510,35 @@ The `git diff` command shows the differences between two commits or changes made
 ### Conclusion
 
    This README covers essential Git commands related to git diff, git stash, git tag, and git reflog. Mastering these commands will allow you to manage your repository more effectively.
+
+# Git Rebase and Reflog
+
+## Git Rebase
+
+Git rebase is a powerful feature that allows you to change the base of a branch by replaying commits from the original base onto a new base. This process helps maintain a cleaner, linear project history.
+
+### Advantages of Rebase
+- Cleaner commit history
+- Easier to understand project history
+- Allows making changes without affecting the original branch
+
+### Merge Commits
+A merge commit combines two or more commits into one. It is created when you merge branches, containing all changes from the original branches. This keeps the project history organized.
+
+### How to Rebase
+
+1. **Check out the feature branch**:
+   ```bash
+   git checkout feature-branch
+
+2. **Rebase onto the main branch**:
+   ```bash
+   git rebase main
+
+3. **Resolve any conflicts**:
+   Use a merge tool (such as VSCode) to fix conflicts. Once conflicts are resolved:
+   ```bash
+   git add <resolved-files>
+   git rebase --continue
+
+**Important Note**: Avoid using --force with rebase to prevent issues with the project history.
