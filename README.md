@@ -563,11 +563,12 @@ To locate a specific commit in your reflog
 If you accidentally deleted a branch or lost changes:
 1. Find the reference to the lost commit using git reflog.
 2. Reset your branch to that reference:
-      ```bash
-     git reset --hard <commit-hash>
-or
+   ```bash
+   git reset --hard <commit-hash>
+   
+- Alternative:
    ```bash
    git reset --hard HEAD@{n}
-
+   
 ### Conclusion
 This document covered the essential concepts of Git Rebase and Git Reflog. Understanding these tools will enhance your ability to manage branches, recover lost commits, and maintain a clean commit history in Git.
