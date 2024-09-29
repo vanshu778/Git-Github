@@ -542,3 +542,32 @@ A merge commit combines two or more commits into one. It is created when you mer
    git rebase --continue
 
 **Important Note**: Avoid using --force with rebase to prevent issues with the project history.
+
+## Git Reflog
+
+Git reflog is a command that shows the history of your references, including commits and branch movements, allowing you to see changes made over time. It is a useful tool for debugging and recovering lost commits.
+
+### Using Reflog
+
+1. **View the Reflog**:
+   ```bash
+   git reflog
+
+2. **Find a Specific Commit**:
+To locate a specific commit in your reflog
+   ```bash
+   git reflog <commit-hash>
+
+### Recover Lost Commits
+
+If you accidentally deleted a branch or lost changes:
+1. Find the reference to the lost commit using git reflog.
+2. Reset your branch to that reference:
+      ```bash
+     git reset --hard <commit-hash>
+or
+   ```bash
+   git reset --hard HEAD@{n}
+
+### Conclusion
+This document covered the essential concepts of Git Rebase and Git Reflog. Understanding these tools will enhance your ability to manage branches, recover lost commits, and maintain a clean commit history in Git.
