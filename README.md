@@ -524,8 +524,15 @@ Git rebase is a powerful feature that allows you to change the base of a branch 
 
 ### Merge Commits
 A merge commit combines two or more commits into one. It is created when you merge branches, containing all changes from the original branches. This keeps the project history organized.
+<p align="center">
+<img width="300" alt="merge commits" src="https://github.com/user-attachments/assets/75fc1949-b75e-4b58-ae7b-240053caba99">
+</p>
 
 ### How to Rebase
+
+<p align="center">
+<img width="300" alt="rebase" src="https://github.com/user-attachments/assets/0c5c2092-d805-4954-98e4-f52a8141f66c">
+</p>
 
 1. **Check out the feature branch**:
    ```bash
