@@ -579,3 +579,116 @@ If you accidentally deleted a branch or lost changes:
    
 ### Conclusion
 This document covered the essential concepts of Git Rebase and Git Reflog. Understanding these tools will enhance your ability to manage branches, recover lost commits, and maintain a clean commit history in Git.
+# Getting Started with GitHub
+
+## What is GitHub?
+
+GitHub is a web-based Git repository hosting service. It is a popular platform for developers to collaborate on projects and share code. GitHub provides a user-friendly interface for managing and tracking changes to your code, as well as for hosting and sharing your projects with others.
+
+### Alternatives to GitHub:
+- **GitLab**
+- **Bitbucket**
+- **Azure Repos**
+- **Gitea**
+
+However, GitHub remains the mainstream choice for developers.
+
+## Creating a GitHub Account
+
+Creating a GitHub account is free and easy. Visit the [GitHub website](https://github.com) and click on the **“Sign up”** button. Enter your email address and password, and you’ll be redirected to the GitHub homepage.
+
+Once your account is created, you can start using GitHub to host and collaborate on your projects.
+
+## Configuring Git
+
+To configure your Git settings, run the following commands in the terminal:
+
+```bash
+git config --global user.email "your-email@example.com"
+git config --global user.name "Your Name"
+```
+
+**Verify Git Settings**
+You can verify your settings with the following command:
+
+```bash
+git config --list
+```
+## Setting Up an SSH Key
+
+SSH keys allow secure communication between your local machine and GitHub. Follow these steps to generate and add an SSH key to GitHub:
+
+### Step 1: Generate a New SSH Key
+```bash
+ssh-keygen -t ed25519 -C "your-email@example.com"
+```
+
+### Step 2: Save the Key
+Press enter to save the key at the default location. You may enter a passphrase or leave it blank.
+
+### Step 3: Add Key to SSH Agent
+Add your SSH key to the SSH agent. Refer to `GitHub's documentation` for detailed steps.
+
+### Step 4: Add Key to GitHub
+Use the GitHub web interface to add your SSH key to your account.
+
+## Adding Code to Remote Repository
+After setting up your SSH key, you can start pushing your code to a remote repository.
+
+### Step 1: Initialize a New Repository
+```bash
+git init
+git add <files>
+git commit -m "commit message"
+```
+### Step 2: Check Remote URL Setting
+```bash
+git remote -v
+```
+
+### Step 3: Add Remote Repository
+```bash
+ git remote add origin <remote-url>
+```
+Example:
+```bash
+git remote add origin https://github.com/username/repository.git
+```
+
+### Step 4: Push Code to Remote Repository
+```bash
+git push origin main
+```
+
+## Setting Upstream Remote
+Setting up an upstream remote helps keep your local repository updated with changes from the remote repository.
+```bash
+git remote add upstream <remote-url>
+```
+Or while pushing:
+```bash
+git push -u origin main
+```
+
+## Fetching and Pulling Code
+There are two ways to get code from a remote repository:
+
+1. **Fetch the code**: Download the code from the remote repository to your local repository.
+2. **Pull the code**: Download the code from the remote repository and merge it with your local repository.
+   
+<p align="center">
+<img width="300" alt="Fetch" src="https://github.com/user-attachments/assets/ccd0a79d-0d19-4948-b5b2-1bac1c685858">
+</p>
+
+### Fetch Code
+```bash
+git fetch <remote-name>
+```
+
+### Pull Code
+```bash
+git pull origin main
+```
+
+## Conclusion
+In this guide, we covered the fundamentals of GitHub, from creating an account to pushing and pulling code. Understanding these concepts will help you effectively use Git and GitHub for your projects.
