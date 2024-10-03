@@ -677,7 +677,7 @@ There are two ways to get code from a remote repository:
 2. **Pull the code**: Download the code from the remote repository and merge it with your local repository.
    
 <p align="center">
-<img width="300" alt="Fetch" src="https://github.com/user-attachments/assets/ccd0a79d-0d19-4948-b5b2-1bac1c685858">
+<img width="500" alt="Fetch" src="https://github.com/user-attachments/assets/ccd0a79d-0d19-4948-b5b2-1bac1c685858">
 </p>
 
 ### Fetch Code
