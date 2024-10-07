@@ -93,7 +93,7 @@ Git and GitHub are essential tools for modern software development. Start by und
 
 # Git and GitHub Terminology
 
-### Checking Your Git Version
+## Checking Your Git Version
 To find out what version of Git is installed on your system, run the following command in your terminal:
 
 ```bash
@@ -102,7 +102,7 @@ git --version
 
 This will display your installed Git version. From my experience, Git is quite stable and usually avoids breaking changes.
 
-### What is a Repository?
+## What is a Repository?
 A **repository** is a collection of files and directories stored together, allowing you to manage your code effectively. While it resembles a regular folder on your computer, it offers more functionality—it can hold files, folders, and even other repositories. Think of a repository as a container for all your code.
 
 It's important to note that tracking a repository with Git differs from just having software on your system. You can check the current state of your repository at any time by running:
@@ -111,7 +111,7 @@ It's important to note that tracking a repository with Git differs from just hav
 git status
 ```
 
-### Understanding Your Config Settings
+## Understanding Your Config Settings
 GitHub provides a plethora of settings you can customize, such as your username and email. When you make a commit, Git records this information. All your configurations are stored in a `.gitconfig` file. You can set global options as well as repository-specific settings.
 
 Let’s configure your email and username. I recommend creating a GitHub account first and using that email and username:
@@ -131,7 +131,7 @@ This command will display all the settings you've modified.
 
 ---
 
-### Creating a Repository
+## Creating a Repository
 Creating a repository involves initializing a new folder on your system to track with Git. It’s simply a regular folder for your project, but by using Git, you're asking it to keep track of changes. Use the following commands:
 
 ```bash
@@ -141,7 +141,7 @@ git status
 
 The `git init` command initializes a new repository by adding a hidden `.git` folder to your project.
 
-### Understanding Commits
+## Understanding Commits
 A **commit** is your way of saving changes to your repository. It acts as a snapshot of your code at a specific time. When you commit, you instruct Git to permanently store your changes, allowing you to revisit that state later.
 
 Here's how the usual flow works:
@@ -151,7 +151,7 @@ Here's how the usual flow works:
 3. Commit your changes with `git commit`.
 4. Push your commits to GitHub using `git push`.
 
-### Staging Files
+## Staging Files
 To stage files for tracking, use:
 
 ```bash
@@ -161,7 +161,7 @@ git status
 
 This command stages your files, indicating that they are ready to be committed.
 
-### Committing Changes
+## Committing Changes
 To commit your staged changes, use:
 
 ```bash
@@ -171,7 +171,7 @@ git status
 
 The `-m` flag allows you to include a brief message describing your changes. If you omit the `-m` flag, your default editor (often VIM) will open for you to enter a message. We'll change this to VSCode in a later section.
 
-### Viewing Commit Logs
+## Viewing Commit Logs
 To see the history of your commits, run:
 
 ```bash
@@ -186,7 +186,7 @@ Using **atomic commits** ensures that each commit is a self-contained unit of wo
 
 ---
 
-### Changing Your Default Code Editor
+## Changing Your Default Code Editor
 If you'd like to set VSCode as your default code editor, run:
 
 ```bash
@@ -195,7 +195,7 @@ git config --global core.editor "code --wait"
 
 ---
 
-### Using .gitignore
+## Using .gitignore
 The **.gitignore** file specifies which files and folders Git should ignore, preventing them from being tracked. Create a `.gitignore` file and list the files or folders you want to exclude, for example:
 
 ```
